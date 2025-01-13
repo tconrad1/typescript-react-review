@@ -5,13 +5,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+
+    position: fixed;
     height: auto;    /*potential change needed */
-    margin: 2rem;
+    width: 100%;    /*potential change needed */
+    margin-left: 0;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    padding-bottom: 20px;
+    z-index: 100;
+    
+}
+.navbar ul  {
+   display: flex;
+   padding: 0;
+    margin: 0;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
 }
 
+
 .navbar a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -26,6 +44,6 @@
 }
 
 .navbar a.active {
-    background-color: #4CAF50;
+    background-color: #3bb13f;
     color: white;
 }
