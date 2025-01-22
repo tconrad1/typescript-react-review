@@ -5,6 +5,7 @@ function Ocr()  {
 	
 	
 	return ( 
+  <div className="Resume">
 	<div className="stl_02">
   <div className="stl_03">
     <img
@@ -429,6 +430,7 @@ function Ocr()  {
       </div>
     </div>
   </div>
+</div>
 </div>
 		);
 };
