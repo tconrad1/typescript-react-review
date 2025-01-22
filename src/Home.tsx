@@ -1,8 +1,8 @@
 import React from 'react';
-import './Body.css';
+import './App.css'
 const Home = () => {
     return (
-        <div className='Body'>
+        <div >
             <h1>Home</h1>
             <p>Welcome to my website! I made this to review <b>react</b> and <b>typescript</b> and to talk a bit about myself. </p>
         </div>
