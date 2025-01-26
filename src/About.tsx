@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from './component/Contact';
+import Contact from './component/DynamicContact';
 const About = () => {
     return (
         <div>

@@ -6,8 +6,8 @@ const Contact =  ({ name, email, linkedin, children  } : { name:String, email:St
         <div>
             <h2>Contact Information</h2>
             <p><strong>Name:</strong> {name}</p>
-            <p><strong>Email:</strong> {email}</p>
-            {linkedin && <p><strong>LinkedIn:</strong> {linkedin}</p>}
+            <p><strong>Email:</strong> {<a href={"mailto:" + email}> thomaswconrad2004@gmail.com</a>}</p>
+            {linkedin && <p><strong>LinkedIn:</strong> {<a href={linkedin + ""} target='_blank'>linkedin</a>}</p>}
             {children}
         </div>
     );

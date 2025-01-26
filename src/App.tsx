@@ -8,6 +8,8 @@ import Projects from "./Projects";
 import Resume from './Resume';
 import Navbar from "./Navbar";
 import "./Navbar.css";
+import Contact  from "./ExpandedContact";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/projects" element = {<Projects/>}/>
+          <Route path="/contact" element={<Contact/>}/>
           <Route path ="/resume" element = {<Resume />}/>
         
         </Routes>
