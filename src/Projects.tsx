@@ -11,6 +11,9 @@ const Projects = () => {
                 <li>
                 <Project title="This website" id="Proj1" description="A website to talk about myself and review react with typescript" future="flesh it out and fix up the css a bit"/>
                 </li>
+                <li>
+                    
+                </li>
 
             </ul>
         </div>
