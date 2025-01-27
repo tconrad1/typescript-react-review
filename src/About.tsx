@@ -1,6 +1,6 @@
 import React from 'react';
 import Contact from './component/DynamicContact';
-import cat from './images/chayka.jpg';
+import Picture from './component/Picture';
 const About = () => {
     return (
         <div>
@@ -10,7 +10,7 @@ const About = () => {
              I am currently looking for a summer internship and more chances to gain experience. </p>
             
              <Contact  name="Thomas Conrad" email="thomaswconrad2004@gmail.com" linkedin={null} children = {<p>Feel free to reach out to me via email!</p>}  /> 
-            <div className='personal'> <p>Here is some fun personal stuff </p> <img src= {cat} alt="my cat, very cute"/></div>
+            <div className='personal'> <p>Here is some fun personal stuff </p> <Picture title="my cat" source= "chayka.jpg"  description="an image of my cat chayka in which she looks very suspicous of the viewer. " /></div>
 
         </div>
 

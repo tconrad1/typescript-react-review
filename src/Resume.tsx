@@ -1,12 +1,12 @@
 import React from 'react';
+import { pdfjs } from 'react-pdf';
 
-import Ocr from './ocr';
 
 const Resume = () => {
+    const res = require("./Thomas Conrad Resume.jpg")
     return (
         <div className='Body'>
-            <p>This is my resume as of 1/22/2025</p>
-            <Ocr/>
+            <img src = {res} alt="Thomas Conrad's Resume " style = {{width:'90%'}}></img>
         </div>
     );
 

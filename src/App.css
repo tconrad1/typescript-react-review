@@ -53,15 +53,15 @@ header p {
   margin-bottom: 20px;
 }
 
-.about a {
+ a {
   color: #33abc9;  /* cyan like text */
   text-decoration: none;
   font-size: 1.2rem;
   font-style: oblique;
 }
 
-.about a:hover {
-  color: #1117bc;  /* deep blue text on link hover*/
+ a:hover {
+  color: #020444;  /* deep blue text on link hover*/
   text-decoration: underline;
 }
 

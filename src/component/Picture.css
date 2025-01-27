@@ -1,0 +1,23 @@
+.picture{
+    display: flex;
+    max-width: fit-content;
+
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-direction: column;
+}   
+
+
+.picture h1, .picture h2 {
+    text-align: center;
+    color: rgb(185, 55, 98);
+}
+
+.picture img{
+    border-radius: 90%;
+    border-color: rgba(0, 0, 0, 0.655);
+    display: block;
+    margin: auto;
+}
