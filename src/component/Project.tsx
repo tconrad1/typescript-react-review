@@ -1,7 +1,7 @@
-import React from "react";
+import React, { JSX } from "react";
 import "./Project.css";
 
-function Project({ title, id="DefProj",  description, future="" }: { title: string; id:string; description: string, future?: string }) {
+function Project({ title, id="DefProj",  description, future="" }: { title: string; id:string; description: string | JSX.Element, future?: string }) {
     return (
         <div>
             <h1>Project: {title}</h1>
