@@ -9,14 +9,16 @@ body {
   
   
   background-color: #2a3f54;  /* gray background */
+  margin: 0  ;
 
-
-
-  color : #6eaebe;  /* cyan like text */
+  color : #98edec;  /* cyan like text */
   line-height:  1.5;
 }
 
 
+.navbar ~* {
+  margin: 0px 88px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -26,7 +28,7 @@ header {
 
 header p {
   font-size: 1.5rem;
-  color : #33abc9;  /* cyan like text */
+  color : #98edec;  /* cyan like text */
   margin-top: 10px;
   text-transform: capitalize;
 }
@@ -42,20 +44,20 @@ header p {
 
 .about h2 {
   font-size: 2rem;
-  color : #33abc9;  /* cyan like text */
+  color : #98edec;  /* cyan like text */
   margin-bottom: 20px;
   text-align: center;
 }
 
 .about p{
   font-size: 1.2rem;
-  color : #33abc9;  /* cyan like text */
+  color : #98edec;  /* cyan like text */
   margin-bottom: 20px;
 }
 
  a {
-  color: #33abc9;  /* cyan like text */
-  text-decoration: none;
+  color: #98edec;  /* cyan like text */
+  text-decoration: underline;
   font-size: 1.2rem;
   font-style: oblique;
 }
@@ -75,20 +77,20 @@ header p {
 }
 .skills  h2 {
   font-size: 2rem;
-  color : #33abc9;  /* cyan like text */
+  color : #98edec;  /* cyan like text */
   margin-bottom: 20px;
   text-align: center;
 }
 .skills  h3 {
   font-size: 1rem;
-  color : #33abc9;  /* cyan like text */
+  color : #98edec;  /* cyan like text */
   margin-bottom: 20px;
   text-align: center;
 }
 
 .skills p{
   font-size: 1.2rem;
-  color : #33abc9;  /* cyan like text */
+  color : #98edec;  /* cyan like text */
   margin-bottom: 20px;
 }
 code {
