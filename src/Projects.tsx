@@ -10,6 +10,9 @@ const Projects = () => {
             <br></br>
             <ul>
                 <li>
+                <Project title="Music Recommendation Site" id="Proj0" description="A nodeJS app using openlibrary's api and user input to recommend books." link="https://cmsc335-final.netlify.app/" future="allow for more criteria impacting recomendations like date published."/>
+                </li>
+                <li>
                 <Project title="This website" id="Proj1" description="A website to talk about myself and review react with typescript" future="flesh it out and fix up the css a bit"/>
                 </li>
                 <li>
