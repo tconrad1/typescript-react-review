@@ -1,3 +1,73 @@
-ul{
-    list-style: none;
+/* Container */
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.projects-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #98edec;
+}
+
+.projects-container p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Individual project card */
+ul li {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+/* Links inside projects */
+ul li a {
+  color: #3bb13f;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+ul li a:hover {
+  color: #98edec;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .projects-container {
+    padding: 1rem;
+  }
+
+  ul li {
+    padding: 1rem;
+  }
 }
