@@ -1,8 +1,19 @@
-.Resume img{
-    width: 100%;
+/* Resume container inside flexbox */
+.resume-page {
+  flex: 1;            /* take all available flex space */
+  display: flex;      /* let iframe stretch */
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.Resume {
-    margin: auto;
-    width: 70%;
+/* Iframe fills the flex container */
+.resume-page iframe {
+  flex: 1;            /* grow to fill parent flex */
+  width: 100%;        /* ensure no default width limit */
+  height: 100%;       /* fill vertically */
+  min-height: 90vh;   /* guarantee visibility even if flex collapses */
+  border: none;
 }

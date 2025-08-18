@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 import "./Resume.css";
 
 const Resume = () => {
-    const res = require("./Thomas Conrad Resume.jpg")
-    return (
-        <div className='Resume'>
-            <img src = {res} alt="Thomas Conrad's Resume " />
-        </div>
-    );
-
+  return (
+    <div className="resume-page">
+      <iframe
+        src="/Thomas_Conrad_Resume.pdf"
+        title="Resume PDF"
+      />
+    </div>
+  );
 };
 
 export default Resume;

@@ -12,11 +12,12 @@ const Projects = () => {
                 <li>
                     <Project title="Wyvern Storyteller" id="wyvern" description= {<p><h2>Large Language Model Enhanced Storytelling App </h2>
 A fullstack application designed to emulate the complex task of acting as a game host for tabletop storybased strategy games such as <b>D&D</b> <br/>
-Utilizing React, Meta’s Ollama platform, LLM tool calling, and various AI technologies the program is able to create behavior typically challenging for LLMs to exhibit while remaining model agnostic
- </p>} />
+Utilizing React, Meta’s Ollama platform, LLM tool calling, and various AI technologies the program is able to create behavior typically challenging for LLMs to exhibit while remaining model agnostic. <br/>
+Here is a link explaining the <a href='https://playwithwyvern.com/'> project</a> </p>
+                } /> 
                 </li>
                 <li>
-                <Project title="Book Recommendation Site" id="book" description="A nodeJS app using openlibrary's api and user input to recommend books." link="https://cmsc335-final.netlify.app/" linkTitle = "Book Rec" future="allow for more criteria impacting recomendations like date published."/>
+                <Project title="Book Rec Site" id="book" description="A nodeJS app using openlibrary's api and user input to recommend books." link="https://cmsc335-final.netlify.app/" linkTitle = "Book Rec" future="allow for more criteria impacting recomendations like date published."/>
                 </li>
                 <li>
                 <Project title="This website" id="website" description="A website to talk about myself and review react with typescript" future="flesh it out and fix up the css a bit"/>
