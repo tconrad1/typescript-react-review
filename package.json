@@ -6,14 +6,15 @@
     "cra-template-typescript": "1.2.0",
     "npm": "^11.0.0",
     "pdfjs-dist": "^4.10.38",
-    "react": "^19.0.0",
+    "react": "^19.1.1",
+    "react-app": "^1.1.2",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-iframe": "^1.8.5",
     "react-pdf": "^9.2.1",
     "react-responsive": "^10.0.0",
     "react-router-dom": "^6.28.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,7 +41,9 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.1.7"
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "eslint-config-react-app": "^7.0.1",
+    "typescript": "^4.9.5"
   }
 }
