@@ -30,6 +30,10 @@ Here is a link explaining the <a href='https://playwithwyvern.com/'> project</a>
                 <Project title='Ethical Shopping App' id='ethic' description={<p>A project I worked on as a lead dev as part of UMD's 2023-2024 <a href='https://sites.google.com/umd.edu/careerlaunch2024/projects'>Break Through Tech's Career Launch </a> cohort, the focus of which was the creation of a demo app to improve ethical shopping practices and consumer awareness</p>} /> 
                 </li>
 
+                <li>
+                    <Project title='Various simple tools' id='tools' description={<p>Tools and simple websites that I wished existed, so I made them. For example a url bloat remover <a href='/tools/short'>link</a></p>} />
+                </li>
+
             </ul>
         </div>
     );
