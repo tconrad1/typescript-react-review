@@ -10,7 +10,7 @@ const About = () => {
              I am currently looking for an internship, part time work, and more chances to gain experience. </p>
             
              <Contact  name="Thomas Conrad" email="thomaswconrad2004@gmail.com" linkedin={null} children = {<p>Feel free to reach out to me via email!</p>}  /> 
-            <div className='personal'> <p>Here is some fun personal stuff </p> <Picture title="my cat" source= "chayka.jpg"  description="an image of my cat chayka in which she looks very suspicious of the viewer. " /></div>
+            {/* <div className='personal'> <p>Here is some fun personal stuff </p> <Picture title="my cat" source= "chayka.jpg"  description="an image of my cat chayka in which she looks very suspicious of the viewer. " /></div> */}
 
         </div>
 
