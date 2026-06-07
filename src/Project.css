@@ -1,8 +1,8 @@
 /* Container */
 .projects-container {
-  max-width: 1000px;
+  max-width: 1280px;
   margin: auto;
-  padding: 2rem;
+  padding: 2.5rem 2rem 3rem;
   animation: fadeIn 0.4s ease-in-out;
 }
 
@@ -10,49 +10,53 @@
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 0.5rem;
-  color: #98edec;
+  color: var(--heading);
 }
 
-.projects-container p {
+.projects-container > p {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 1.2rem;
+  color: var(--text-soft);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* List styling */
-ul {
+.projects-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
 /* Individual project card */
-ul li {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+.projects-list li {
+  background: var(--surface);
+  padding: 1.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-ul li:hover {
+.projects-list li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 30px rgba(18, 34, 53, 0.2);
 }
 
 /* Links inside projects */
-ul li a {
-  color: #3bb13f;
+.projects-list li a {
+  color: var(--brand);
   font-weight: 500;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-ul li a:hover {
-  color: #98edec;
+.projects-list li a:hover {
+  color: var(--brand-strong);
 }
 
 /* Animations */
@@ -67,7 +71,14 @@ ul li a:hover {
     padding: 1rem;
   }
 
-  ul li {
+  .projects-list li {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.35rem;
   }
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ theme, onToggleTheme }: { theme: 'dark' | 'light'; onToggleTheme: () => void }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -39,6 +39,17 @@ const Navbar = () => {
             <NavLink to="/resume" onClick={() => setIsOpen(false)}>Resume</NavLink>
           </li>
         </ul>
+
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={onToggleTheme}
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
+          aria-pressed={theme === 'dark'}
+        >
+          {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+        </button>
       </div>
     </nav>
   );

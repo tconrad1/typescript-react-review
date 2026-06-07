@@ -1,7 +1,25 @@
-Project{
-    /*temp to show css working */ 
+.project-item {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #000;
-}    
+    color: var(--text);
+}
+
+.project-item h2 {
+    margin: 0 0 1rem;
+    font-size: 1.35rem;
+    color: var(--heading);
+    line-height: 1.25;
+}
+
+.project-item p {
+    margin: 0.7rem 0;
+    color: var(--text-soft);
+    text-align: left;
+    line-height: 1.7;
+}
+
+.project-item a {
+    display: inline-block;
+    margin: 0.15rem 0 0.6rem;
+}

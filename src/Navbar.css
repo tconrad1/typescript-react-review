@@ -1,7 +1,9 @@
 /* Base styles */
 .navbar {
-  background-color: #000;
-  padding: 0.5rem 1.5rem;
+  background: var(--navbar-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -18,7 +20,7 @@
 .navbar-logo a {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3bb13f;
+  color: var(--brand-strong);
   text-decoration: none;
 }
 
@@ -30,7 +32,7 @@
 }
 
 .nav-links li a {
-  color: #f2f2f2;
+  color: var(--nav-link);
   padding: 0.5rem 0.8rem;
   text-decoration: none;
   font-size: 1rem;
@@ -39,14 +41,38 @@
 }
 
 .nav-links li a:hover {
-  background-color: #3bb13f;
-  color: white;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 4px 12px;
+  background-color: var(--nav-hover-bg);
+  color: var(--brand-strong);
+  box-shadow: rgba(15, 37, 54, 0.15) 0 4px 12px;
 }
 
 .nav-links li a.active {
-  background-color: #3bb13f;
-  color: white;
+  background-color: var(--nav-active-bg);
+  color: var(--nav-active-text);
+}
+
+.theme-toggle {
+  margin-left: 1rem;
+  background: transparent;
+  color: var(--nav-link);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--nav-hover-bg);
+  color: var(--brand-strong);
+  border-color: var(--brand);
+}
+
+.theme-toggle[aria-pressed="true"] {
+  background: var(--nav-active-bg);
+  color: var(--nav-active-text);
+  border-color: transparent;
 }
 
 /* Mobile menu toggle */
@@ -58,7 +84,7 @@
 }
 
 .menu-toggle span {
-  background: #f2f2f2;
+  background: var(--nav-link);
   height: 3px;
   width: 25px;
   border-radius: 3px;
@@ -83,13 +109,16 @@
 
   .nav-links {
     position: absolute;
-    top: 60px;
+    top: 62px;
     right: 0;
     flex-direction: column;
     align-items: flex-start;
-    background: #000;
-    width: 200px;
+    background: var(--surface);
+    width: 220px;
     padding: 1rem;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 12px 24px rgba(15, 37, 54, 0.16);
     transform: translateX(100%);
   }
 
@@ -104,5 +133,11 @@
   .nav-links li a {
     width: 100%;
     display: block;
+  }
+
+  .theme-toggle {
+    margin-left: 0.75rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
   }
 }

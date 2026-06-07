@@ -4,23 +4,39 @@ import "./Project.css"
 
 const Projects = () => {
     return (
-        <div>
+        <div className="projects-container">
             <h1>Projects</h1>
             <p>Here are some of the projects I have worked on: </p>
-            <br></br>
-            <ul>
+            <ul className="projects-list">
+                
+                
                 <li>
-                    <Project title="Wyvern Storyteller" id="wyvern" description= {<p><h2>Large Language Model Enhanced Storytelling App </h2>
+                    <Project
+                        title="Proof of Code"
+                        id="poc"
+                        description={
+                            <>
+                                <h3>A project which allows students to definitively prove their code is their own. Developed as part of a team for Bitcamp 2026. See more about our winning project on devpost <a href='https://devpost.com/software/proof-of-code'>here</a>.</h3>
+                            </>
+                        }
+                        future="Potentially speaking to umd faculty about using the project in classes."
+                    />
+ 
+                </li>
+                
+                
+                <li>
+                    <Project title="Wyvern Storyteller" id="wyvern" description= {<><h3>Large Language Model Enhanced Storytelling App </h3>
 A fullstack application designed to emulate the complex task of acting as a game host for tabletop storybased strategy games such as <b>D&D</b> <br/>
 Utilizing React, Meta’s Ollama platform, LLM tool calling, and various AI technologies the program is able to create behavior typically challenging for LLMs to exhibit while remaining model agnostic. <br/>
-Here is a link explaining the <a href='https://playwithwyvern.com/'> project</a> </p>
+Here is a link explaining the <a href='https://playwithwyvern.com/'> project</a> </>
                 } /> 
                 </li>
                 <li>
                 <Project title="Book Rec Site" id="book" description="A nodeJS app using openlibrary's api and user input to recommend books." link="https://cmsc335-final.netlify.app/" linkTitle = "Book Rec" future="allow for more criteria impacting recomendations like date published."/>
                 </li>
                 <li>
-                <Project title="This website" id="website" description="A website to talk about myself and review react with typescript" future="flesh it out and fix up the css a bit"/>
+                <Project title="This website" id="website" description="A website to talk about myself and review react with typescript" future="Improve integration with dark and light mode related browser extensions."/>
                 </li>
                 <li>
                 <Project title="Parallel Process Research Project" id="threads" description= {<p>A project I worked on as part of   <a href='https://www.cs.umd.edu/class/fall2024/cmsc216-040X/'>CMSC 216 </a>  at the University of Maryland </p>}/>

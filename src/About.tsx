@@ -1,6 +1,5 @@
 import React from 'react';
 import Contact from './component/DynamicContact';
-import Picture from './component/Picture';
 const About = () => {
     return (
         <div>
